@@ -13,8 +13,8 @@
     --line: #e7e5dc;
     --ink: #1c211b;
     --ink-dim: #6e756a;
-    --copper: #953800;
-    --copper-dim: #c9895c;
+    --accent: #0078a4;
+    --accent-dim: #6bafc9;
     --shadow: rgba(28, 33, 27, 0.08);
   }
 
@@ -24,8 +24,8 @@
     --line: #2b352a;
     --ink: #e9e6da;
     --ink-dim: #93a091;
-    --copper: #c8834c;
-    --copper-dim: #7a5535;
+    --accent: #4fb3d9;
+    --accent-dim: #2c6e86;
     --shadow: rgba(0, 0, 0, 0.45);
   }
 
@@ -66,7 +66,7 @@
     font-family: "IBM Plex Mono", "Consolas", monospace;
     font-size: 13px;
     letter-spacing: 0.02em;
-    color: var(--copper);
+    color: var(--accent);
     margin: 0 0 14px;
   }
 
@@ -96,12 +96,12 @@
   }
 
   .links a {
-    color: var(--copper);
+    color: var(--accent);
     text-decoration: none;
-    border-bottom: 1px solid var(--copper-dim);
+    border-bottom: 1px solid var(--accent-dim);
     padding-bottom: 1px;
   }
-  .links a:hover, .links a:focus-visible { border-color: var(--copper); }
+  .links a:hover, .links a:focus-visible { border-color: var(--accent); }
 
   .theme-toggle {
     font-family: "IBM Plex Mono", "Consolas", monospace;
@@ -114,7 +114,7 @@
     cursor: pointer;
     transition: color 0.15s ease, border-color 0.15s ease;
   }
-  .theme-toggle:hover, .theme-toggle:focus-visible { color: var(--copper); border-color: var(--copper-dim); }
+  .theme-toggle:hover, .theme-toggle:focus-visible { color: var(--accent); border-color: var(--accent-dim); }
 
   section.category {
     margin-bottom: 56px;
@@ -195,7 +195,7 @@
     transition: color 0.15s ease;
   }
 
-  .repo:hover .repo-name, .repo:focus-visible .repo-name { color: var(--copper); }
+  .repo:hover .repo-name, .repo:focus-visible .repo-name { color: var(--accent); }
 
   .repo-tag {
     display: inline-flex;
@@ -239,7 +239,7 @@
   }
 
   a:focus-visible, .repo:focus-visible, .theme-toggle:focus-visible {
-    outline: 2px solid var(--copper);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
 </style>
@@ -314,7 +314,7 @@
   </section>
 
   <footer>
-    Generated from public, non-forked repositories on <a href="https://github.com/andrewpono" style="color:var(--copper)">github.com/andrewpono</a>. Auto-updated daily — see <code>scripts/generate_index.py</code>.
+    Generated from public, non-forked repositories on <a href="https://github.com/andrewpono" style="color:var(--accent)">github.com/andrewpono</a>. Auto-updated daily — see <code>scripts/generate_index.py</code>.
     <br>Last updated: <!-- LAST-UPDATED -->2026-09-11<!-- /LAST-UPDATED -->
   </footer>
 </main>
